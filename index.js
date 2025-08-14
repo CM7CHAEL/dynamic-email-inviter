@@ -11,8 +11,8 @@ const PORT = 3000;
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'c80561695@gmail.com', // Tu dirección de correo  (Modificar)
-    pass: 'ti yo w p j w v r g c n g b g e d'.replace(/\s/g, '') // Tu contraseña de correo o clave de aplicación (Modificar)
+    user: 'cm7chael@gmail.com', // Tu dirección de correo  (Modificar)
+    pass: 'timtqzicoosmzobg' // Tu contraseña de correo o clave de aplicación (Modificar)
   }
 });
 
