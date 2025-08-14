@@ -149,6 +149,68 @@
 </html>
 
 <style>
+  /* --- MOBILE FIX HERO --- */
+  /* --- FIX MOBILE superposiciones --- */
+@media (max-width: 768px) {
+  /* Bloque profesionales: sin overlay y a 1 columna */
+  .intro.profesionales{ 
+    display:block !important; 
+    position:static !important; 
+    margin-bottom:16px !important;
+  }
+  .intro_img{ 
+    width:100% !important; 
+    display:block !important;
+  }
+  .intro_text{ 
+    position:relative !important; 
+    inset:auto !important;
+    margin:12px 0 0 0 !important; 
+    padding:16px !important; 
+    width:auto !important;
+  }
+
+  /* CTAs: ancho completo y botón dentro, no absoluto */
+  .catalogo-box{ 
+    width:100% !important; 
+    margin:16px 0 !important; 
+    padding:16px !important; 
+    position:relative !important;
+  }
+  .catalogo-boton{
+    position:relative !important;
+    bottom:auto !important;
+    right:auto !important;
+    display:inline-block !important;
+    margin-top:10px !important;
+  }
+}
+
+  @media (max-width: 768px) {
+    .hero { padding: 16px; min-height: auto; }
+
+    .hero__content { flex-direction: column; align-items: flex-start; }
+    .hero__text { width: 100%; }
+    .hero h1 { font-size: 1.6rem; }
+
+    .hero__image-container { width: 100%; margin-top: 10px; }
+
+    .hero__figure img{
+      position: static !important;   /* quita el absolute */
+      top: auto !important;
+      right: auto !important;
+      height: auto !important;
+      max-width: 100% !important;
+      filter: none;                  /* opcional: quita sombra pesada en móvil */
+    }
+
+    .hero__badge{
+      font-size: 1.8rem;
+      margin-top: 8px;
+      align-self: flex-start;
+    }
+  }
+
   /* RESET BÁSICO */
   * {
     margin: 0;

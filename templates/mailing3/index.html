@@ -385,7 +385,6 @@
 
   /* FOOTER */
   .site-footer {
-    padding-top: 15px;
     text-align: center;
   }
 
@@ -409,6 +408,12 @@
     padding: 2px;
     border-radius: 4px;
     width: 300px;
+  }
+  @media (max-width: 768px) {
+    .footer__distributor-container {
+      width: 200px; /* o el tamaño que necesites */
+      padding: 1px; /* opcional para ajustarlo más */
+    }
   }
 
   .footer__distributor-text {

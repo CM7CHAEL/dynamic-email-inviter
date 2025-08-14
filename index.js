@@ -53,6 +53,12 @@ app.post('/send-emails', async (req, res) => {
       nombreEmpresa: 'StudioXperto',
       direccionEmpresa: 'San Miguel, Lima',
       nombrePersona: 'Sr. Michael Cervera'
+    },
+    {
+      email: 'patricia@pristi.net',
+      nombreEmpresa: 'StudioXperto',
+      direccionEmpresa: 'San Miguel, Lima',
+      nombrePersona: 'Sr. Michael Cervera'
     }
   ];
 

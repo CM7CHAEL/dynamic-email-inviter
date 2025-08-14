@@ -28,10 +28,10 @@
           </div>
           <div class="hero__image-container">
             <figure class="hero__figure">
-              <img src="../mailing2/images/Z1-Tower-G1i_a.png" alt="HP Z Workstations" />
+              <img src="https://www.pristi.net/images/mailing2/images/Z1-Tower-G1i_a.png" alt="HP Z Workstations" />
             </figure>
             <figure class="hero__figure2">
-              <img src="../mailing2/images/Z2-Tower-G1i_a.png" alt="HP Z Workstations" />
+              <img src="https://www.pristi.net/images/mailing2/images/Z2-Tower-G1i_a.png" alt="HP Z Workstations" />
             </figure>
           </div>
         </div>
@@ -60,19 +60,19 @@
         <ul class="feature-list">
           <li class="feature-list__item">
             <div class="circle-container">
-              <img src="icons/potencia.png" alt="" class="feature__icon" />
+              <img src="https://www.pristi.net/images/mailing2/icons/potencia.png" alt="" class="feature__icon" />
             </div>
             <span class="feature__tag">Potencia y confiabilidad</span>
           </li>
           <li class="feature-list__item">
             <div class="circle-container">
-              <img src="icons/rendimiento.png" alt="" class="feature__icon" />
+              <img src="https://www.pristi.net/images/mailing2/icons/rendimiento.png" alt="" class="feature__icon" />
             </div>
             <span class="feature__tag">Rendimiento gráfico de otro nivel</span>
           </li>
           <li class="feature-list__item">
             <div class="circle-container">
-              <img src="icons/expancion.png" alt="" class="feature__icon" />
+              <img src="https://www.pristi.net/images/mailing2/icons/expancion.png" alt="" class="feature__icon" />
             </div>
             <span class="feature__tag">Movilidad y expansión ilimitadas</span>
           </li>
@@ -94,14 +94,14 @@
       <footer class="site-footer">
         <div class="footer__logo-container">
           <img
-            src="../mailing2/images/kfSoluciones.png"
+            src="https://www.pristi.net/images/mailing2/images/kfSoluciones.png"
             alt="K8 Soluciones"
             class="footer__logo1"
           />
           <div class="footer__distributor-container">
             <span class="footer__distributor-text">Distribuidor oficial de:</span>
             <img
-              src="../mailing2/images/4aa4-7665enw-2.png"
+              src="https://www.pristi.net/images/mailing2/images/4aa4-7665enw-2.png"
               alt="Hp"
               class="footer__distributor-logo"
             />
@@ -112,14 +112,14 @@
           <!-- WhatsApp -->
           <p>
             <a href="https://wa.link/udl0gh" target="_blank" class="link">
-              <img src="icons/whatsapp.png" alt="Web" width="24" height="24"/>
+              <img src="https://www.pristi.net/images/mailing2/icons/whatsapp.png" alt="Web" width="24" height="24"/>
               <span style="color: #0054a6">987 528 523</span>
             </a>
           </p>
           <!-- Web -->
           <p>
             <a href="http://www.hfsoluciones.com/" target="_blank"   class="link">
-              <img src="icons/web.png" alt="Web" width="24" height="24"/>
+              <img src="https://www.pristi.net/images/mailing2/icons/web.png" alt="Web" width="24" height="24"/>
               <span style="color: #0054a6">www.hfsoluciones.com</span>
             </a>
           </p>
@@ -128,16 +128,16 @@
         <div class="footer__social">
           <span style="color: #0054a6">Síguenos: </span>
           <a href="https://www.linkedin.com/in/hf-soluciones-69b18a23a/" target="_blank" class="link">
-            <img src="icons/linkedin.png" alt="LinkedIn" />
+            <img src="https://www.pristi.net/images/mailing2/icons/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100083523814445" target="_blank" class="link">
-            <img src="icons/facebook.png" alt="Facebook" />
+            <img src="https://www.pristi.net/images/mailing2/icons/facebook.png" alt="Facebook" />
           </a>
           <a href="https://www.instagram.com/hf.soluciones/" target="_blank" class="link">
-            <img src="icons/instagram.png" alt="Instagram" />
+            <img src="https://www.pristi.net/images/mailing2/icons/instagram.png" alt="Instagram" />
           </a>
           <a href="#" target="_blank" class="link">
-            <img src="icons/tiktok.png" alt="Tiktok" />
+            <img src="https://www.pristi.net/images/mailing2/icons/tiktok.png" alt="Tiktok" />
           </a>
         </div>
       </footer>
@@ -488,4 +488,22 @@
     color: #0054a6;
     text-decoration: none;
   }
+  @media (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__figure img,
+  .hero__figure2 img {
+    position: static; /* Quita el absolute */
+    height: auto;
+    max-width: 100%;
+  }
+
+  .hero__figure2 {
+    margin-top: 15px; /* Espacio para que quede debajo */
+  }
+}
+
 </style>
