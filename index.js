@@ -11,14 +11,14 @@ const PORT = 3000;
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'tucorreo@gmail.com', // Tu dirección de correo  (Modificar)
-    pass: 'el pass creado en tu cuenta' // Tu contraseña de correo o clave de aplicación (Modificar)
+    user: 'c80561695@gmail.com', // Tu dirección de correo  (Modificar)
+    pass: 'ti yo w p j w v r g c n g b g e d'.replace(/\s/g, '') // Tu contraseña de correo o clave de aplicación (Modificar)
   }
 });
 
 // Función para enviar correos con HTML dinámico
 const sendEmails = async (recipients) => {
-  const htmlTemplate = fs.readFileSync(path.join(__dirname, 'templates', 'emailTemplate.html'), 'utf-8');
+  const htmlTemplate = fs.readFileSync(path.join(__dirname, 'templates/mailing4', 'index.html'), 'utf-8');
   const template = handlebars.compile(htmlTemplate);
   // Itera sobre los destinatarios y envía el correo personalizado a cada uno
   for (let recipient of recipients) {
@@ -29,9 +29,9 @@ const sendEmails = async (recipients) => {
       nombrePersona: recipient.nombrePersona
     });
     let mailOptions = {
-      from: 'Tranki Live Calm',
+      from: 'hforzani@hfsoluciones.com',
       to: recipient.email,
-      subject: 'CARTA DE INVITACIÓN',
+      subject: '🚀 El poder que tu productividad estaba esperando: ZBook 8 G1',
       html: htmlContent
     };
 
@@ -48,12 +48,6 @@ const sendEmails = async (recipients) => {
 app.post('/send-emails', async (req, res) => {
   // Lista de destinatarios
   const recipients = [
-    {
-      email: 'studioxperto@gmail.com',
-      nombreEmpresa: 'Studio Xperto',
-      direccionEmpresa: 'Nuevo pucusana mz h lote 11',
-      nombrePersona: 'Sr. Studio Xperto'
-    },
     {
       email: 'cm7chael@gmail.com',
       nombreEmpresa: 'StudioXperto',
