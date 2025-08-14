@@ -49,7 +49,7 @@ app.post('/send-emails', async (req, res) => {
   // Lista de destinatarios
   const recipients = [
     {
-      email: 'cm7chael@gmail.com',
+      email: 'michael.cervera@intelica.com',
       nombreEmpresa: 'StudioXperto',
       direccionEmpresa: 'San Miguel, Lima',
       nombrePersona: 'Sr. Michael Cervera'
