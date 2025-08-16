@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 
 // Función para enviar correos con HTML dinámico
 const sendEmails = async (recipients) => {
-  const htmlTemplate = fs.readFileSync(path.join(__dirname, 'templates/mailing4', 'index.html'), 'utf-8');
+  const htmlTemplate = fs.readFileSync(path.join(__dirname, 'templates/mailing1', 'index.html'), 'utf-8');
   const template = handlebars.compile(htmlTemplate);
   // Itera sobre los destinatarios y envía el correo personalizado a cada uno
   for (let recipient of recipients) {
